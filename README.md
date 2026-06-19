@@ -278,7 +278,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) to review development setup steps
 ## 16. Maintainers & Support
 
 - **Maintainer**: L9G9N0
-- **Security Contact**: security-report@example.com
+- **Security Contact**: hackerdc8287@gmail.com
 - **Support Channels**: For bugs and support, please open a GitHub Issue in the repository.
 
 ---
