@@ -1,0 +1,19 @@
+# EditorConfig root declaration
+root = true
+
+# Define parameters for all files
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Specific overrides for python files if added
+[*.py]
+indent_size = 4
+
+# Specific overrides for markdown files
+[*.md]
+trim_trailing_whitespace = false

@@ -1,0 +1,8 @@
+# CODEOWNERS file for YouTube Cognitive Firewall
+
+# Default owner for everything in the repository
+*       @L9G9N0
+
+# Specifically target extension source files
+/src/   @L9G9N0
+/public/ @L9G9N0

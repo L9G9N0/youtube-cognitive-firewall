@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Cognitive Firewall",
+  "version": "0.1.0",
+  "description": "Block distracting feeds, sidebars, comments, and clickbait to stay focused on YouTube.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "favicon.svg",
+      "48": "favicon.svg",
+      "128": "favicon.svg"
+    }
+  },
+  "icons": {
+    "16": "favicon.svg",
+    "48": "favicon.svg",
+    "128": "favicon.svg"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
